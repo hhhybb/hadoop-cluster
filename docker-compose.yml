@@ -1,0 +1,21 @@
+version: '3'
+services:
+  hadoop-master:
+    build: .
+    ports:
+     - '50070:50070' 
+     - '8088:8088'
+    container_name: hadoop-master
+    tty: true
+    depends_on:
+      - hadoop-slave1
+      - hadoop-slave2
+    entrypoint: /root/start-hadoop.sh
+  hadoop-slave1:
+    build: .
+    tty: true
+    container_name: hadoop-slave1   
+  hadoop-slave2:
+    build: .
+    tty: true
+    container_name: hadoop-slave2             
