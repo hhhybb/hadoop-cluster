@@ -27,7 +27,13 @@ http://mirrors.tuna.tsinghua.edu.cn/apache/hadoop/common/hadoop-2.9.2/hadoop-2.9
 docker-compose up -d
 ```
   
-##### 4. run wordcount
+##### 4. access the master container
+
+```
+docker exec -it hadoop-master /bin/bash
+```
+  
+##### 5. run wordcount
 
 ```
 ./run-wordcount.sh
