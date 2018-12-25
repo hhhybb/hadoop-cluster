@@ -11,7 +11,7 @@ An simple Hadoop-cluster based on docker
 ##### 1.clone github repository
 
 ```
-git clone https://github.com/hhhybb/hadoop-cluster
+git clone https://github.com/hhhybb/hadoop-cluster.git
 ```
 
 ##### 2. Download hadoop-2.9.2 via mirror sites, then put it in the current directory
@@ -19,6 +19,7 @@ git clone https://github.com/hhhybb/hadoop-cluster
 ```
 http://mirrors.tuna.tsinghua.edu.cn/apache/hadoop/common/hadoop-2.9.2/hadoop-2.9.2.tar.gz
 ```
+![alt tag](https://github.com/hhhybb/hadoop-cluster/blob/master/config.jpg)
 
 ##### 3. Execute docker-compose under this directory
 
